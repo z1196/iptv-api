@@ -194,7 +194,7 @@ def show_log():
 
 
 @app.route("/log/speed-test")
-def show_log():
+def show_speed_test_log():
     if os.path.exists(constants.speed_test_log_path):
         with open(constants.speed_test_log_path, "r", encoding="utf-8") as file:
             content = file.read()
